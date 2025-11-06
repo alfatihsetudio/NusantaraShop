@@ -1,11 +1,12 @@
-﻿(vendor
-node_modules
-public/storage
-.idea
-.vscode
-.env
-.env.*.local
-.phpunit.result.cache
+﻿@'
+/vendor
+/node_modules
+/public/storage
+/.idea
+/.vscode
+/.env
+/.env.*.local
+/.phpunit.result.cache
 /storage/*.key
 /storage/debugbar
 /storage/*.log
@@ -19,5 +20,10 @@ public/storage
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-public/build
-build)
+/public/build
+/build
+/.sass-cache
+/.vscode/
+.DS_Store
+Thumbs.db
+'@ | Set-Content .gitignore -Encoding UTF8
